@@ -10,13 +10,16 @@
   "devDependencies": {
     "rollup": "^2.60.2",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-vue": "^6.0.0"
+    "rollup-plugin-vue": "^6.0.0",
+    "vuepress": "^2.0.0-beta.27"
   },
   "scripts": {
     "build": "rollup -c",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
-  "version": "0.0.5",
+  "version": "0.0.7",
   "main": "dist/library.js",
   "module": "dist/library.mjs",
   "files": [
